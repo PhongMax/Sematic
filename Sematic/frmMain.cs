@@ -357,6 +357,11 @@ namespace Semantic_Triangle
             {
                 strKichHoat += " " + "(" + entry.Key.ToString() + ")" + " -> " + entry.Value + "  ";
             }
+
+            if(strKichHoat.Length == 0)
+            {
+                strKichHoat = "Không kích hoạt được đỉnh nào với dữ liệu hiện tại !";
+            }
             //set textbox
             this.txtKichHoat.Text = strKichHoat;
 
@@ -428,7 +433,7 @@ namespace Semantic_Triangle
 
             // thay màu nền và tiêu đề của group box
             this.grYeuTo.Text = "Chọn yếu tố cần tính: ";
-            this.grYeuTo.BackColor = System.Drawing.Color.DarkKhaki;
+
 
 
 
@@ -975,6 +980,9 @@ namespace Semantic_Triangle
                 MessageBox.Show("Không đủ dữ liệu để tính!", "Kết Quả");
 
             }
+
+            // xóa  nội dụng trong collection dictionary
+            Triangle.dinhKichHoat.Clear();
 
         }
     }

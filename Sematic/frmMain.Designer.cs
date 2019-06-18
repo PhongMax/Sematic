@@ -251,7 +251,7 @@
             // txtKichHoat
             // 
             this.txtKichHoat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtKichHoat.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKichHoat.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKichHoat.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtKichHoat.Location = new System.Drawing.Point(16, 23);
             this.txtKichHoat.Multiline = true;
