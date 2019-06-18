@@ -219,7 +219,7 @@
             this.btnnKetQua.Location = new System.Drawing.Point(134, 78);
             this.btnnKetQua.Name = "btnnKetQua";
             this.btnnKetQua.Size = new System.Drawing.Size(82, 23);
-            this.btnnKetQua.TabIndex = 23;
+            this.btnnKetQua.TabIndex = 5;
             this.btnnKetQua.Text = "Kết quả";
             this.btnnKetQua.UseVisualStyleBackColor = true;
             this.btnnKetQua.Click += new System.EventHandler(this.btnnKetQua_Click);
@@ -375,7 +375,7 @@
             this.txxtr.Location = new System.Drawing.Point(355, 218);
             this.txxtr.Name = "txxtr";
             this.txxtr.Size = new System.Drawing.Size(63, 24);
-            this.txxtr.TabIndex = 15;
+            this.txxtr.TabIndex = 17;
             this.txxtr.Visible = false;
             this.txxtr.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txxtr_KeyDown);
             // 
@@ -384,7 +384,7 @@
             this.txtS.Location = new System.Drawing.Point(131, 218);
             this.txtS.Name = "txtS";
             this.txtS.Size = new System.Drawing.Size(63, 24);
-            this.txtS.TabIndex = 7;
+            this.txtS.TabIndex = 8;
             this.txtS.Visible = false;
             this.txtS.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtS_KeyDown);
             // 
@@ -393,7 +393,7 @@
             this.txtR.Location = new System.Drawing.Point(355, 190);
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(63, 24);
-            this.txtR.TabIndex = 14;
+            this.txtR.TabIndex = 16;
             this.txtR.Visible = false;
             this.txtR.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtR_KeyDown);
             // 
@@ -411,7 +411,7 @@
             this.txtHc.Location = new System.Drawing.Point(355, 162);
             this.txtHc.Name = "txtHc";
             this.txtHc.Size = new System.Drawing.Size(63, 24);
-            this.txtHc.TabIndex = 13;
+            this.txtHc.TabIndex = 14;
             this.txtHc.Visible = false;
             this.txtHc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHc_KeyDown);
             // 
@@ -429,7 +429,7 @@
             this.txtHb.Location = new System.Drawing.Point(355, 137);
             this.txtHb.Name = "txtHb";
             this.txtHb.Size = new System.Drawing.Size(63, 24);
-            this.txtHb.TabIndex = 12;
+            this.txtHb.TabIndex = 13;
             this.txtHb.Visible = false;
             this.txtHb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHb_KeyDown);
             // 
@@ -447,7 +447,7 @@
             this.txtHa.Location = new System.Drawing.Point(355, 111);
             this.txtHa.Name = "txtHa";
             this.txtHa.Size = new System.Drawing.Size(63, 24);
-            this.txtHa.TabIndex = 11;
+            this.txtHa.TabIndex = 12;
             this.txtHa.Visible = false;
             this.txtHa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHa_KeyDown);
             // 
@@ -465,7 +465,7 @@
             this.txtMc.Location = new System.Drawing.Point(355, 85);
             this.txtMc.Name = "txtMc";
             this.txtMc.Size = new System.Drawing.Size(63, 24);
-            this.txtMc.TabIndex = 10;
+            this.txtMc.TabIndex = 11;
             this.txtMc.Visible = false;
             this.txtMc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMc_KeyDown);
             // 
@@ -474,7 +474,7 @@
             this.txtMb.Location = new System.Drawing.Point(355, 58);
             this.txtMb.Name = "txtMb";
             this.txtMb.Size = new System.Drawing.Size(63, 24);
-            this.txtMb.TabIndex = 9;
+            this.txtMb.TabIndex = 10;
             this.txtMb.Visible = false;
             this.txtMb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMb_KeyDown);
             // 
@@ -492,7 +492,7 @@
             this.txtMa.Location = new System.Drawing.Point(355, 30);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(63, 24);
-            this.txtMa.TabIndex = 8;
+            this.txtMa.TabIndex = 9;
             this.txtMa.Visible = false;
             this.txtMa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMa_KeyDown);
             // 
@@ -546,7 +546,7 @@
             this.chKNoiTiep.Location = new System.Drawing.Point(200, 215);
             this.chKNoiTiep.Name = "chKNoiTiep";
             this.chKNoiTiep.Size = new System.Drawing.Size(143, 22);
-            this.chKNoiTiep.TabIndex = 3;
+            this.chKNoiTiep.TabIndex = 17;
             this.chKNoiTiep.Text = "BK nội tiếp  r";
             this.chKNoiTiep.UseVisualStyleBackColor = true;
             this.chKNoiTiep.CheckedChanged += new System.EventHandler(this.chKNoiTiep_CheckedChanged);
@@ -558,7 +558,7 @@
             this.chkNgoaiTiep.Location = new System.Drawing.Point(200, 192);
             this.chkNgoaiTiep.Name = "chkNgoaiTiep";
             this.chkNgoaiTiep.Size = new System.Drawing.Size(143, 22);
-            this.chkNgoaiTiep.TabIndex = 8;
+            this.chkNgoaiTiep.TabIndex = 16;
             this.chkNgoaiTiep.Text = "BK ngoại tiếp R";
             this.chkNgoaiTiep.UseVisualStyleBackColor = true;
             this.chkNgoaiTiep.CheckedChanged += new System.EventHandler(this.chkNgoaiTiep_CheckedChanged);
@@ -570,7 +570,7 @@
             this.chkDcHc.Location = new System.Drawing.Point(200, 165);
             this.chkDcHc.Name = "chkDcHc";
             this.chkDcHc.Size = new System.Drawing.Size(143, 22);
-            this.chkDcHc.TabIndex = 10;
+            this.chkDcHc.TabIndex = 15;
             this.chkDcHc.Text = "Đường cao Hc";
             this.chkDcHc.UseVisualStyleBackColor = true;
             this.chkDcHc.CheckedChanged += new System.EventHandler(this.chcĐcHc_CheckedChanged);
@@ -583,7 +583,7 @@
             this.chkDcHb.Location = new System.Drawing.Point(200, 139);
             this.chkDcHb.Name = "chkDcHb";
             this.chkDcHb.Size = new System.Drawing.Size(143, 22);
-            this.chkDcHb.TabIndex = 12;
+            this.chkDcHb.TabIndex = 14;
             this.chkDcHb.Text = "Đường cao Hb";
             this.chkDcHb.UseVisualStyleBackColor = false;
             this.chkDcHb.CheckedChanged += new System.EventHandler(this.chkĐcHb_CheckedChanged);
@@ -595,7 +595,7 @@
             this.chkDttMc.Location = new System.Drawing.Point(200, 85);
             this.chkDttMc.Name = "chkDttMc";
             this.chkDttMc.Size = new System.Drawing.Size(143, 22);
-            this.chkDttMc.TabIndex = 15;
+            this.chkDttMc.TabIndex = 12;
             this.chkDttMc.Text = "Đường t.tuyến Mc";
             this.chkDttMc.UseVisualStyleBackColor = true;
             this.chkDttMc.CheckedChanged += new System.EventHandler(this.chkĐtMc_CheckedChanged);
@@ -607,7 +607,7 @@
             this.chkDcHa.Location = new System.Drawing.Point(200, 113);
             this.chkDcHa.Name = "chkDcHa";
             this.chkDcHa.Size = new System.Drawing.Size(143, 22);
-            this.chkDcHa.TabIndex = 11;
+            this.chkDcHa.TabIndex = 13;
             this.chkDcHa.Text = "Đường cao Ha";
             this.chkDcHa.UseVisualStyleBackColor = true;
             this.chkDcHa.CheckedChanged += new System.EventHandler(this.chkĐcaoA_CheckedChanged);
@@ -619,7 +619,7 @@
             this.chkCanhC.Location = new System.Drawing.Point(18, 85);
             this.chkCanhC.Name = "chkCanhC";
             this.chkCanhC.Size = new System.Drawing.Size(74, 22);
-            this.chkCanhC.TabIndex = 2;
+            this.chkCanhC.TabIndex = 3;
             this.chkCanhC.Text = "Cạnh c";
             this.chkCanhC.UseVisualStyleBackColor = true;
             this.chkCanhC.Click += new System.EventHandler(this.chkCanhC_Click);
@@ -631,7 +631,7 @@
             this.chkDttMb.Location = new System.Drawing.Point(200, 56);
             this.chkDttMb.Name = "chkDttMb";
             this.chkDttMb.Size = new System.Drawing.Size(143, 22);
-            this.chkDttMb.TabIndex = 14;
+            this.chkDttMb.TabIndex = 11;
             this.chkDttMb.Text = "Đường t.tuyên Mb";
             this.chkDttMb.UseVisualStyleBackColor = true;
             this.chkDttMb.CheckedChanged += new System.EventHandler(this.chkĐttMb_CheckedChanged);
@@ -655,7 +655,7 @@
             this.chkDttMa.Location = new System.Drawing.Point(200, 30);
             this.chkDttMa.Name = "chkDttMa";
             this.chkDttMa.Size = new System.Drawing.Size(143, 22);
-            this.chkDttMa.TabIndex = 13;
+            this.chkDttMa.TabIndex = 9;
             this.chkDttMa.Text = "Đường t.tuyến Ma";
             this.chkDttMa.UseVisualStyleBackColor = true;
             this.chkDttMa.CheckedChanged += new System.EventHandler(this.chkĐttMa_CheckedChanged);
@@ -679,7 +679,7 @@
             this.chkGocC.Location = new System.Drawing.Point(19, 165);
             this.chkGocC.Name = "chkGocC";
             this.chkGocC.Size = new System.Drawing.Size(74, 22);
-            this.chkGocC.TabIndex = 9;
+            this.chkGocC.TabIndex = 6;
             this.chkGocC.Text = "Góc C";
             this.chkGocC.UseVisualStyleBackColor = true;
             this.chkGocC.CheckedChanged += new System.EventHandler(this.chkGocC_CheckedChanged);
@@ -704,7 +704,7 @@
             this.chkDienTich.Location = new System.Drawing.Point(20, 220);
             this.chkDienTich.Name = "chkDienTich";
             this.chkDienTich.Size = new System.Drawing.Size(74, 22);
-            this.chkDienTich.TabIndex = 6;
+            this.chkDienTich.TabIndex = 8;
             this.chkDienTich.Text = "Diện tích S";
             this.chkDienTich.UseVisualStyleBackColor = true;
             this.chkDienTich.CheckedChanged += new System.EventHandler(this.chkDienTich_CheckedChanged);
@@ -752,6 +752,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1370, 708);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
