@@ -309,6 +309,17 @@ namespace Semantic_Triangle
         }
         private void btnThemCT_Click(object sender, EventArgs e)
         {
+            // reset lại màu của các checkbox
+            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
+            foreach (var chkTemp in chkLists)
+            {
+                chkTemp.Checked = false;
+         
+                // restart background về trạng thái ban đầu
+                chkTemp.BackColor = System.Drawing.Color.Silver;
+
+            }
+
             // ẩn các text box
             List<TextBox> txtLists = this.grYeuTo.Controls.OfType<TextBox>().ToList();
             foreach (var txtTemp in txtLists)
@@ -326,7 +337,7 @@ namespace Semantic_Triangle
             this.isBtnThemCT_Clicked = true;
 
             // recover list check box
-            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
+       
             foreach (var chkTemp in chkLists)
             {
                     chkTemp.Checked = false;
@@ -620,6 +631,17 @@ namespace Semantic_Triangle
 
         private void btnNap_Click(object sender, EventArgs e)
         {
+            // reset lại màu của các checkbox
+            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
+            foreach (var chkTemp in chkLists)
+            {
+                chkTemp.Checked = false;
+
+                // restart background về trạng thái ban đầu
+                chkTemp.BackColor = System.Drawing.Color.Silver;
+
+            }
+
 
             // ẩn các text box
             List<TextBox> txtLists = this.grYeuTo.Controls.OfType<TextBox>().ToList();
@@ -642,7 +664,6 @@ namespace Semantic_Triangle
             // thay tiêu đề của group box
             this.grYeuTo.Text = "Nạp yếu tố có đã biết: ";
             // recover list check box
-            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
             foreach (var chkTemp in chkLists)
             {
                 // enable checkbox đã khởi tạo lúc ban đầu.
@@ -949,12 +970,12 @@ namespace Semantic_Triangle
                     {
                         triangle.arrKetQua[i] = Math.Round(triangle.arrKetQua[i], 2);
                     }
-                    String result = "Cạnh a =  " + triangle.arrKetQua[0] 
-                        + "   Cạnh b =  " + triangle.arrKetQua[1] 
-                        + "   Cạnh c =  " + triangle.arrKetQua[2] 
-                        + "   Góc A =  " + triangle.arrKetQua[3] 
-                        + "   Góc B =  " + triangle.arrKetQua[4] 
-                        + "   Góc C =  " + triangle.arrKetQua[5]
+                    String result = "Cạnh a =  " + triangle.arrKetQua[0]
+                        + "   Cạnh b =  " + triangle.arrKetQua[1]
+                        + "   Cạnh c =  " + triangle.arrKetQua[2]
+                        + "   Góc A =  " + Math.Round( triangle.arrKetQua[3] * 180 / Math.PI , 2)
+                        + "   Góc B =  " + Math.Round(triangle.arrKetQua[4] * 180 /Math.PI, 2)
+                        + "   Góc C =  " + Math.Round( triangle.arrKetQua[5] * 180 / Math.PI, 2)
                         + "   p =  " + triangle.arrKetQua[6] 
                         + "   S =  " + triangle.arrKetQua[7] 
                         + "   Ma =  " + triangle.arrKetQua[8] 
