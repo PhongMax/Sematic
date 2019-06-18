@@ -469,6 +469,7 @@ namespace Semantic_Triangle
                         case 4:
                             double temp1 = (this.arrKetQua[1] * Math.Sin(this.arrKetQua[3])) / this.arrKetQua[0];
                             this.arrKetQua[4] = Math.Asin(temp1);
+
                             break;
                     }
                     break;
