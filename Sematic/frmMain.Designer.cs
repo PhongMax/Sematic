@@ -47,6 +47,7 @@
             this.btnNap = new System.Windows.Forms.Button();
             this.btnThemCT = new System.Windows.Forms.Button();
             this.grYeuTo = new System.Windows.Forms.GroupBox();
+            this.lblEnter = new System.Windows.Forms.Label();
             this.txxtr = new System.Windows.Forms.TextBox();
             this.txtS = new System.Windows.Forms.TextBox();
             this.txtR = new System.Windows.Forms.TextBox();
@@ -215,7 +216,7 @@
             // 
             this.btnnKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnKetQua.ForeColor = System.Drawing.Color.Black;
-            this.btnnKetQua.Location = new System.Drawing.Point(144, 86);
+            this.btnnKetQua.Location = new System.Drawing.Point(134, 78);
             this.btnnKetQua.Name = "btnnKetQua";
             this.btnnKetQua.Size = new System.Drawing.Size(82, 23);
             this.btnnKetQua.TabIndex = 23;
@@ -227,7 +228,7 @@
             // 
             this.btnTinhCuThe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinhCuThe.ForeColor = System.Drawing.Color.Black;
-            this.btnTinhCuThe.Location = new System.Drawing.Point(144, 57);
+            this.btnTinhCuThe.Location = new System.Drawing.Point(134, 52);
             this.btnTinhCuThe.Name = "btnTinhCuThe";
             this.btnTinhCuThe.Size = new System.Drawing.Size(82, 23);
             this.btnTinhCuThe.TabIndex = 3;
@@ -265,7 +266,7 @@
             // 
             this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestart.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnRestart.Location = new System.Drawing.Point(36, 84);
+            this.btnRestart.Location = new System.Drawing.Point(26, 79);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(82, 23);
             this.btnRestart.TabIndex = 4;
@@ -277,7 +278,7 @@
             // 
             this.btnTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinh.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnTinh.Location = new System.Drawing.Point(36, 55);
+            this.btnTinh.Location = new System.Drawing.Point(26, 50);
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(82, 23);
             this.btnTinh.TabIndex = 2;
@@ -289,7 +290,7 @@
             // 
             this.btnNap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNap.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnNap.Location = new System.Drawing.Point(36, 23);
+            this.btnNap.Location = new System.Drawing.Point(26, 18);
             this.btnNap.Name = "btnNap";
             this.btnNap.Size = new System.Drawing.Size(82, 23);
             this.btnNap.TabIndex = 0;
@@ -302,7 +303,7 @@
             this.btnThemCT.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemCT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemCT.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btnThemCT.Location = new System.Drawing.Point(144, 23);
+            this.btnThemCT.Location = new System.Drawing.Point(134, 18);
             this.btnThemCT.Name = "btnThemCT";
             this.btnThemCT.Size = new System.Drawing.Size(82, 23);
             this.btnThemCT.TabIndex = 1;
@@ -313,6 +314,7 @@
             // grYeuTo
             // 
             this.grYeuTo.BackColor = System.Drawing.Color.Silver;
+            this.grYeuTo.Controls.Add(this.lblEnter);
             this.grYeuTo.Controls.Add(this.txxtr);
             this.grYeuTo.Controls.Add(this.txtS);
             this.grYeuTo.Controls.Add(this.txtR);
@@ -355,6 +357,18 @@
             this.grYeuTo.TabStop = false;
             this.grYeuTo.Text = "Các yếu tố được cài đặt trong chương trình";
             this.grYeuTo.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblEnter
+            // 
+            this.lblEnter.AutoSize = true;
+            this.lblEnter.BackColor = System.Drawing.Color.Gray;
+            this.lblEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnter.Location = new System.Drawing.Point(317, 244);
+            this.lblEnter.Name = "lblEnter";
+            this.lblEnter.Size = new System.Drawing.Size(104, 13);
+            this.lblEnter.TabIndex = 16;
+            this.lblEnter.Text = "Nhấn Enter để  nạp!";
+            this.lblEnter.Visible = false;
             // 
             // txxtr
             // 
@@ -502,7 +516,7 @@
             // 
             // chkCanhA
             // 
-            this.chkCanhA.AutoSize = true;
+            this.chkCanhA.BackColor = System.Drawing.Color.Silver;
             this.chkCanhA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkCanhA.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkCanhA.Location = new System.Drawing.Point(18, 30);
@@ -510,12 +524,11 @@
             this.chkCanhA.Size = new System.Drawing.Size(74, 22);
             this.chkCanhA.TabIndex = 0;
             this.chkCanhA.Text = "Cạnh a";
-            this.chkCanhA.UseVisualStyleBackColor = true;
+            this.chkCanhA.UseVisualStyleBackColor = false;
             this.chkCanhA.Click += new System.EventHandler(this.chkCanhA_Click);
             // 
             // chkCanhB
             // 
-            this.chkCanhB.AutoSize = true;
             this.chkCanhB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkCanhB.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkCanhB.Location = new System.Drawing.Point(18, 56);
@@ -528,12 +541,11 @@
             // 
             // chKNoiTiep
             // 
-            this.chKNoiTiep.AutoSize = true;
             this.chKNoiTiep.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chKNoiTiep.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chKNoiTiep.Location = new System.Drawing.Point(200, 215);
             this.chKNoiTiep.Name = "chKNoiTiep";
-            this.chKNoiTiep.Size = new System.Drawing.Size(111, 22);
+            this.chKNoiTiep.Size = new System.Drawing.Size(143, 22);
             this.chKNoiTiep.TabIndex = 3;
             this.chKNoiTiep.Text = "BK nội tiếp  r";
             this.chKNoiTiep.UseVisualStyleBackColor = true;
@@ -541,12 +553,11 @@
             // 
             // chkNgoaiTiep
             // 
-            this.chkNgoaiTiep.AutoSize = true;
             this.chkNgoaiTiep.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkNgoaiTiep.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkNgoaiTiep.Location = new System.Drawing.Point(200, 192);
             this.chkNgoaiTiep.Name = "chkNgoaiTiep";
-            this.chkNgoaiTiep.Size = new System.Drawing.Size(129, 22);
+            this.chkNgoaiTiep.Size = new System.Drawing.Size(143, 22);
             this.chkNgoaiTiep.TabIndex = 8;
             this.chkNgoaiTiep.Text = "BK ngoại tiếp R";
             this.chkNgoaiTiep.UseVisualStyleBackColor = true;
@@ -554,12 +565,11 @@
             // 
             // chkDcHc
             // 
-            this.chkDcHc.AutoSize = true;
             this.chkDcHc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDcHc.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDcHc.Location = new System.Drawing.Point(200, 165);
             this.chkDcHc.Name = "chkDcHc";
-            this.chkDcHc.Size = new System.Drawing.Size(123, 22);
+            this.chkDcHc.Size = new System.Drawing.Size(143, 22);
             this.chkDcHc.TabIndex = 10;
             this.chkDcHc.Text = "Đường cao Hc";
             this.chkDcHc.UseVisualStyleBackColor = true;
@@ -567,13 +577,12 @@
             // 
             // chkDcHb
             // 
-            this.chkDcHb.AutoSize = true;
             this.chkDcHb.BackColor = System.Drawing.Color.Transparent;
             this.chkDcHb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDcHb.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDcHb.Location = new System.Drawing.Point(200, 139);
             this.chkDcHb.Name = "chkDcHb";
-            this.chkDcHb.Size = new System.Drawing.Size(123, 22);
+            this.chkDcHb.Size = new System.Drawing.Size(143, 22);
             this.chkDcHb.TabIndex = 12;
             this.chkDcHb.Text = "Đường cao Hb";
             this.chkDcHb.UseVisualStyleBackColor = false;
@@ -581,7 +590,6 @@
             // 
             // chkDttMc
             // 
-            this.chkDttMc.AutoSize = true;
             this.chkDttMc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDttMc.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDttMc.Location = new System.Drawing.Point(200, 85);
@@ -594,12 +602,11 @@
             // 
             // chkDcHa
             // 
-            this.chkDcHa.AutoSize = true;
             this.chkDcHa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDcHa.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDcHa.Location = new System.Drawing.Point(200, 113);
             this.chkDcHa.Name = "chkDcHa";
-            this.chkDcHa.Size = new System.Drawing.Size(123, 22);
+            this.chkDcHa.Size = new System.Drawing.Size(143, 22);
             this.chkDcHa.TabIndex = 11;
             this.chkDcHa.Text = "Đường cao Ha";
             this.chkDcHa.UseVisualStyleBackColor = true;
@@ -607,7 +614,6 @@
             // 
             // chkCanhC
             // 
-            this.chkCanhC.AutoSize = true;
             this.chkCanhC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkCanhC.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkCanhC.Location = new System.Drawing.Point(18, 85);
@@ -620,7 +626,6 @@
             // 
             // chkDttMb
             // 
-            this.chkDttMb.AutoSize = true;
             this.chkDttMb.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDttMb.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDttMb.Location = new System.Drawing.Point(200, 56);
@@ -633,12 +638,11 @@
             // 
             // chkGocA
             // 
-            this.chkGocA.AutoSize = true;
             this.chkGocA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkGocA.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkGocA.Location = new System.Drawing.Point(19, 113);
             this.chkGocA.Name = "chkGocA";
-            this.chkGocA.Size = new System.Drawing.Size(69, 22);
+            this.chkGocA.Size = new System.Drawing.Size(74, 22);
             this.chkGocA.TabIndex = 4;
             this.chkGocA.Text = "Góc A";
             this.chkGocA.UseVisualStyleBackColor = true;
@@ -646,7 +650,6 @@
             // 
             // chkDttMa
             // 
-            this.chkDttMa.AutoSize = true;
             this.chkDttMa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDttMa.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDttMa.Location = new System.Drawing.Point(200, 30);
@@ -659,12 +662,11 @@
             // 
             // chkGocB
             // 
-            this.chkGocB.AutoSize = true;
             this.chkGocB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkGocB.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkGocB.Location = new System.Drawing.Point(19, 139);
             this.chkGocB.Name = "chkGocB";
-            this.chkGocB.Size = new System.Drawing.Size(70, 22);
+            this.chkGocB.Size = new System.Drawing.Size(74, 22);
             this.chkGocB.TabIndex = 5;
             this.chkGocB.Text = "Góc B";
             this.chkGocB.UseVisualStyleBackColor = true;
@@ -672,12 +674,11 @@
             // 
             // chkGocC
             // 
-            this.chkGocC.AutoSize = true;
             this.chkGocC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkGocC.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkGocC.Location = new System.Drawing.Point(19, 165);
             this.chkGocC.Name = "chkGocC";
-            this.chkGocC.Size = new System.Drawing.Size(71, 22);
+            this.chkGocC.Size = new System.Drawing.Size(74, 22);
             this.chkGocC.TabIndex = 9;
             this.chkGocC.Text = "Góc C";
             this.chkGocC.UseVisualStyleBackColor = true;
@@ -698,12 +699,11 @@
             // 
             // chkDienTich
             // 
-            this.chkDienTich.AutoSize = true;
             this.chkDienTich.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkDienTich.ForeColor = System.Drawing.SystemColors.InfoText;
             this.chkDienTich.Location = new System.Drawing.Point(20, 220);
             this.chkDienTich.Name = "chkDienTich";
-            this.chkDienTich.Size = new System.Drawing.Size(98, 22);
+            this.chkDienTich.Size = new System.Drawing.Size(74, 22);
             this.chkDienTich.TabIndex = 6;
             this.chkDienTich.Text = "Diện tích S";
             this.chkDienTich.UseVisualStyleBackColor = true;
@@ -757,7 +757,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_Ve";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mạng Ngữ Nghĩa Trong Tam Giác";
+            this.Text = "Tool Giải Bài Tập Tam Giác";
             this.Load += new System.EventHandler(this.frm_Ve_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -833,5 +833,6 @@
         private System.Windows.Forms.TextBox txtCanhB;
         private System.Windows.Forms.TextBox txtCanhA;
         private System.Windows.Forms.Button btnnKetQua;
+        private System.Windows.Forms.Label lblEnter;
     }
 }

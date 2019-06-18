@@ -319,7 +319,7 @@ namespace Semantic_Triangle
 
             // thay màu nền và tiêu đề của group box
             this.grYeuTo.Text = "Chọn yếu tố có trong công thức cần thêm vào:";
-            this.grYeuTo.BackColor = System.Drawing.Color.Lime;
+            this.grYeuTo.BackColor = System.Drawing.Color.Silver;
 
             //flag xử lý sự kiện 
             // this.isBtnKichHoa_Clicked = false;
@@ -407,7 +407,8 @@ namespace Semantic_Triangle
                 txtTemp.Visible = false;
             }
 
-
+            // ẩn label enter
+            lblEnter.Visible = false;
             this.isBtnTinh_Clicked = true;
             // kiểm tra nếu checkbox nào có trạng thái true thì gán lại fasle.
             List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
@@ -650,7 +651,7 @@ namespace Semantic_Triangle
         // restart lai các chức năng và làm lại từ đầu.
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            // ẩn cách text box
+            // ẩn các text box
             List<TextBox> txtLists = this.grYeuTo.Controls.OfType<TextBox>().ToList();
             foreach (var txtTemp in txtLists)
             {
@@ -658,6 +659,8 @@ namespace Semantic_Triangle
                 txtTemp.Visible = false;
             }
 
+            // ẩn lable enter
+            lblEnter.Visible = false;
 
             //restart checklists
             // kiểm tra nếu checkbox nào có trạng thái true thì gán lại fasle.
@@ -666,11 +669,15 @@ namespace Semantic_Triangle
             {
                 chkTemp.Checked = false;
                 chkTemp.Enabled = false;
+                // restart background về trạng thái ban đầu
+                chkTemp.BackColor = System.Drawing.Color.Silver;
 
             }
             // cập nhật lại mảng với giá trị ban đầu...
             Array.Copy(triangle.ArrOri, triangle.Arr, triangle.ArrOri.Length);
-          
+
+            // cập nhật lai background
+            this.grYeuTo.BackColor = System.Drawing.Color.Silver;
 
             // cập nhật lại số công thức đã cho sẵn
             Triangle.nColumn = 15;
@@ -699,6 +706,9 @@ namespace Semantic_Triangle
                 txtTemp.Visible = true;
             }
 
+            // hiện lable enter
+            lblEnter.Visible = true;
+
         }
 
         private void txtCanhA_KeyDown(object sender, KeyEventArgs e)
@@ -710,9 +720,9 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkCanhA.Enabled = true;
                 chkCanhA.Checked = true;
-                
 
-                    Double.TryParse(txtCanhA.Text, out triangle.arrKetQua[0]);
+                this.chkCanhA.BackColor = System.Drawing.Color.DarkOrange;
+                Double.TryParse(txtCanhA.Text, out triangle.arrKetQua[0]);
     
 
 
@@ -726,7 +736,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkCanhB.Enabled = true;
                 chkCanhB.Checked = true;
-
+                this.chkCanhB.BackColor = System.Drawing.Color.DarkOrange;
                 Double.TryParse(txtCanhB.Text, out triangle.arrKetQua[1]);
 
             }
@@ -739,7 +749,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkCanhC.Enabled = true;
                 chkCanhC.Checked = true;
-
+                this.chkCanhC.BackColor = System.Drawing.Color.DarkOrange;
                 Double.TryParse(txtCanhC.Text, out triangle.arrKetQua[2]);
             }
         }
@@ -751,6 +761,8 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkGocA.Enabled = true;
                 chkGocA.Checked = true;
+
+                this.chkGocA.BackColor = System.Drawing.Color.DarkOrange;
                 double temp;
                 double.TryParse(txtGocA.Text, out temp);
                 triangle.arrKetQua[3] = Math.PI * temp / 180.0;
@@ -765,6 +777,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkGocB.Enabled = true;
                 chkGocB.Checked = true;
+                this.chkGocB.BackColor = System.Drawing.Color.DarkOrange;
                 double temp;
                 double.TryParse(txtGocB.Text, out temp);
                 triangle.arrKetQua[3] = Math.PI * temp / 180.0;
@@ -778,6 +791,8 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkGocC.Enabled = true;
                 chkGocC.Checked = true;
+                this.chkGocC.BackColor = System.Drawing.Color.DarkOrange;
+
                 double temp;
                 Double.TryParse(txtGocC.Text, out temp);
                 triangle.arrKetQua[3] = Math.PI * temp / 180.0;
@@ -793,6 +808,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkNuaChuVi.Enabled = true;
                 chkNuaChuVi.Checked = true;
+                this.chkNuaChuVi.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtChuvi.Text, out triangle.arrKetQua[6]);
             }
@@ -805,6 +821,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDienTich.Enabled = true;
                 chkDienTich.Checked = true;
+                this.chkDienTich.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtS.Text, out triangle.arrKetQua[7]);
             }
@@ -817,6 +834,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDttMa.Enabled = true;
                 chkDttMa.Checked = true;
+                this.chkDttMa.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtMa.Text, out triangle.arrKetQua[8]);
             }
@@ -829,6 +847,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDttMb.Enabled = true;
                 chkDttMb.Checked = true;
+                this.chkDttMb.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtMb.Text, out triangle.arrKetQua[9]);
             }
@@ -841,6 +860,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDttMc.Enabled = true;
                 chkDttMc.Checked = true;
+                this.chkDttMc.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtMc.Text, out triangle.arrKetQua[10]);
             }
@@ -853,6 +873,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDcHa.Enabled = true;
                 chkDcHa.Checked = true;
+                this.chkDcHa.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtHa.Text, out triangle.arrKetQua[11]);
             }
@@ -865,6 +886,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDcHb.Enabled = true;
                 chkDcHb.Checked = true;
+                this.chkDcHb.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtHb.Text, out triangle.arrKetQua[12]);
             }
@@ -877,6 +899,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkDcHc.Enabled = true;
                 chkDcHc.Checked = true;
+                this.chkDcHc.BackColor = System.Drawing.Color.DarkOrange;
 
                 Double.TryParse(txtHc.Text, out triangle.arrKetQua[13]);
             }
@@ -889,7 +912,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chkNgoaiTiep.Enabled = true;
                 chkNgoaiTiep.Checked = true;
-
+                this.chkNgoaiTiep.BackColor = System.Drawing.Color.DarkOrange;
                 Double.TryParse(txtR.Text, out triangle.arrKetQua[14]);
             }
         }
@@ -901,7 +924,7 @@ namespace Semantic_Triangle
                 isBtnNap_Clicked = true;
                 chKNoiTiep.Enabled = true;
                 chKNoiTiep.Checked = true;
-
+                this.chKNoiTiep.BackColor = System.Drawing.Color.DarkOrange;
                 Double.TryParse(txxtr.Text, out triangle.arrKetQua[15]);
             }
         }

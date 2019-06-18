@@ -49,7 +49,7 @@ namespace Semantic_Triangle
                     return result;
                 }
             }
-            return "Dữ liệu chứ đủ, bạn hãy thêm tri thức vào !!!";
+            return "Dữ liệu chưa đủ, bạn hãy thêm tri thức vào !!!";
         }
 
         public Triangle()
