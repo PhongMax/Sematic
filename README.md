@@ -1,4 +1,5 @@
-# Sematic
+# solve_triangle
 Giải bài toán Tam Giác bằng mạng ngữ nghĩa(Bài tập môn TTNT)
 
-Còn nhiều lỗi chưa Fix... Đang bận nên sẽ Fix sau, hi @@
+* Visual Studio 2017 Enterprise
+* Target framework 4.6.1
