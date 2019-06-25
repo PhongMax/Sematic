@@ -124,76 +124,7 @@ namespace Semantic_Triangle
             }
         }
 
-        private void btnKhoiTao_Click(object sender, EventArgs e)
-        {
-            // enable các checkbox...
-            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
-            foreach (var chkTemp in chkLists)
-            {
-                if (chkTemp.Checked == false)
-                    chkTemp.Enabled = false;
-            }
-
-
-            // tạo danh sách các CheckBox nằm trong panel3
-            // mỗi checkbox tuong ung voi cac yeu to cua tam giac
-            //if (!isBtnKichHoa_Clicked)
-            //{
-            //    Array.Copy(triangle.ArrOri, triangle.Arr, triangle.ArrOri.Length);
-
-            //}
-
-
-            if (isBtnThemCT_Clicked)
-            {
-                Array.Copy(triangle.ArrOri, triangle.Arr, triangle.ArrOri.Length);
-                int[] temp = CongThucThemVao();
-                triangle.ThemCongThuc(temp);
-                // cập nhật lại arrDem sau khi thêm công thức vào.
-                Triangle.arrDem = triangle.DemYeuTo(-1);
-            }
-
-            if (isBtnNap_Clicked)
-            {
-                //c1
-                chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
-                foreach (var chkTemp in chkLists)
-                {
-                    //    foreach (Control x in this.Controls)
-                    //{
-                    //    if (x is TextBox)
-                    //    {
-                    //        ((TextBox)x).Text = String.Empty;
-                    //    }
-                    //}
-                    //c2
-                    if (chkTemp.Checked == true)
-                    {
-                        int sttItem = Status_Check(chkTemp);
-                        triangle.KhoiTaoMangTG(sttItem);
-                    }
-                }
-            }
-
-
-
-            // vẽ lại bảng sau khi qua bước khởi tạo
-            DrawMatrix(triangle.Arr, g, new Point(25, 25));
-
-            //flag xử lý xự kiện 
-            //this.isBtnKichHoa_Clicked = false;
-            this.isBtnTinh_Clicked = false;
-           
-            this.isBtnThemCT_Clicked = false;
-            this.isBtnNap_Clicked = false;
-
-            // cập nhật nội dung textbox giá trị trống
-            this.txtKichHoat.Text = "";
-            // xóa  nội dụng trong collection dictionary
-            Triangle.dinhKichHoat.Clear();
-        }
-
-
+   
         private void btnCongThuc_Click(object sender, EventArgs e)
         {
             this.pnHienThi.BackgroundImage = global::Sematic.Properties.Resources.tamgiac1;
@@ -349,35 +280,7 @@ namespace Semantic_Triangle
 
         }
 
-        private void btnKichHoat_Click(object sender, EventArgs e)
-        {
-            //flag xử lý xự kiện 
-            // this.isBtnKichHoa_Clicked = true;
-            this.isBtnTinh_Clicked = false;
-            // cập nhật nội dung textbox giá trị trống
-            this.txtKichHoat.Text = "";
-            //xử lý
-            triangle.LanTruyenKichHoat();
-
-            //vẽ hình
-            DrawMatrix(triangle.Arr, g, new Point(this.Size.Width / 2 + 5, 25));
-
-            //cập nhật nội dụng textbox 
-            string strKichHoat = "";
-            foreach (KeyValuePair<int, string> entry in Triangle.dinhKichHoat)
-            {
-                strKichHoat += " " + "(" + entry.Key.ToString() + ")" + " -> " + entry.Value + "  ";
-            }
-
-            if(strKichHoat.Length == 0)
-            {
-                strKichHoat = "Không kích hoạt được đỉnh nào với dữ liệu hiện tại !";
-            }
-            //set textbox
-            this.txtKichHoat.Text = strKichHoat;
-
-        }
-
+    
         public void TinhKetQuaa()
         {
             int yeuToTinh = -1;
@@ -707,7 +610,7 @@ namespace Semantic_Triangle
 
             // cập nhật lại số công thức đã cho sẵn
             Triangle.nColumn = 15;
-            btnKhoiTao_Click(sender, e);
+            button1_Click(sender, e);
             this.grThuTuKichHoat.Text = "Thứ tự được kích hoạt";
             // xuất thông báo restart thành công
             MessageBox.Show("Restart thành công!", "Kết Quả");
@@ -1005,6 +908,103 @@ namespace Semantic_Triangle
             // xóa  nội dụng trong collection dictionary
             Triangle.dinhKichHoat.Clear();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // enable các checkbox...
+            List<CheckBox> chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
+            foreach (var chkTemp in chkLists)
+            {
+                if (chkTemp.Checked == false)
+                    chkTemp.Enabled = false;
+            }
+
+
+            // tạo danh sách các CheckBox nằm trong panel3
+            // mỗi checkbox tuong ung voi cac yeu to cua tam giac
+            //if (!isBtnKichHoa_Clicked)
+            //{
+            //    Array.Copy(triangle.ArrOri, triangle.Arr, triangle.ArrOri.Length);
+
+            //}
+
+
+            if (isBtnThemCT_Clicked)
+            {
+                Array.Copy(triangle.ArrOri, triangle.Arr, triangle.ArrOri.Length);
+                int[] temp = CongThucThemVao();
+                triangle.ThemCongThuc(temp);
+                // cập nhật lại arrDem sau khi thêm công thức vào.
+                Triangle.arrDem = triangle.DemYeuTo(-1);
+            }
+
+            if (isBtnNap_Clicked)
+            {
+                //c1
+                chkLists = this.grYeuTo.Controls.OfType<CheckBox>().ToList();
+                foreach (var chkTemp in chkLists)
+                {
+                    //    foreach (Control x in this.Controls)
+                    //{
+                    //    if (x is TextBox)
+                    //    {
+                    //        ((TextBox)x).Text = String.Empty;
+                    //    }
+                    //}
+                    //c2
+                    if (chkTemp.Checked == true)
+                    {
+                        int sttItem = Status_Check(chkTemp);
+                        triangle.KhoiTaoMangTG(sttItem);
+                    }
+                }
+            }
+
+
+
+            // vẽ lại bảng sau khi qua bước khởi tạo
+            DrawMatrix(triangle.Arr, g, new Point(25, 25));
+
+            //flag xử lý xự kiện 
+            //this.isBtnKichHoa_Clicked = false;
+            this.isBtnTinh_Clicked = false;
+
+            this.isBtnThemCT_Clicked = false;
+            this.isBtnNap_Clicked = false;
+
+            // cập nhật nội dung textbox giá trị trống
+            this.txtKichHoat.Text = "";
+            // xóa  nội dụng trong collection dictionary
+            Triangle.dinhKichHoat.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //flag xử lý xự kiện 
+            // this.isBtnKichHoa_Clicked = true;
+            this.isBtnTinh_Clicked = false;
+            // cập nhật nội dung textbox giá trị trống
+            this.txtKichHoat.Text = "";
+            //xử lý
+            triangle.LanTruyenKichHoat();
+
+            //vẽ hình
+            DrawMatrix(triangle.Arr, g, new Point(this.Size.Width / 2 + 5, 25));
+
+            //cập nhật nội dụng textbox 
+            string strKichHoat = "";
+            foreach (KeyValuePair<int, string> entry in Triangle.dinhKichHoat)
+            {
+                strKichHoat += " " + "(" + entry.Key.ToString() + ")" + " -> " + entry.Value + "  ";
+            }
+
+            if (strKichHoat.Length == 0)
+            {
+                strKichHoat = "Không kích hoạt được đỉnh nào với dữ liệu hiện tại !";
+            }
+            //set textbox
+            this.txtKichHoat.Text = strKichHoat;
         }
     }
 

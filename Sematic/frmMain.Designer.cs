@@ -81,9 +81,9 @@
             this.chkNuaChuVi = new System.Windows.Forms.CheckBox();
             this.chkDienTich = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnKichHoat = new System.Windows.Forms.Button();
-            this.btnKhoiTao = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -714,8 +714,8 @@
             this.panel2.AutoScroll = true;
             this.panel2.AutoSize = true;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.btnKichHoat);
-            this.panel2.Controls.Add(this.btnKhoiTao);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -723,30 +723,27 @@
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // btnKichHoat
+            // button1
             // 
-            this.btnKichHoat.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnKichHoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKichHoat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnKichHoat.Location = new System.Drawing.Point(801, 0);
-            this.btnKichHoat.Name = "btnKichHoat";
-            this.btnKichHoat.Size = new System.Drawing.Size(119, 23);
-            this.btnKichHoat.TabIndex = 1;
-            this.btnKichHoat.Text = "Kích hoạt lan truyền";
-            this.btnKichHoat.UseVisualStyleBackColor = false;
-            this.btnKichHoat.Click += new System.EventHandler(this.btnKichHoat_Click);
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Location = new System.Drawing.Point(179, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Khởi tạo";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnKhoiTao
+            // button2
             // 
-            this.btnKhoiTao.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnKhoiTao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKhoiTao.Location = new System.Drawing.Point(163, 3);
-            this.btnKhoiTao.Name = "btnKhoiTao";
-            this.btnKhoiTao.Size = new System.Drawing.Size(62, 23);
-            this.btnKhoiTao.TabIndex = 0;
-            this.btnKhoiTao.Text = "Khởi Tạo";
-            this.btnKhoiTao.UseVisualStyleBackColor = false;
-            this.btnKhoiTao.Click += new System.EventHandler(this.btnKhoiTao_Click);
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.Location = new System.Drawing.Point(776, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Kích hoạt lan truyền";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frm_Ve
             // 
@@ -803,11 +800,9 @@
         private System.Windows.Forms.CheckBox chkDttMc;
         private System.Windows.Forms.CheckBox chkDttMb;
         private System.Windows.Forms.CheckBox chkDttMa;
-        private System.Windows.Forms.Button btnKhoiTao;
         private System.Windows.Forms.Panel pnHienThi;
         private System.Windows.Forms.Button btnTamGiac;
         private System.Windows.Forms.Button btnThemCT;
-        private System.Windows.Forms.Button btnKichHoat;
         private System.Windows.Forms.GroupBox grYeuTo;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.GroupBox grDieuKhien;
@@ -835,5 +830,7 @@
         private System.Windows.Forms.TextBox txtCanhA;
         private System.Windows.Forms.Button btnnKetQua;
         private System.Windows.Forms.Label lblEnter;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
